@@ -16,7 +16,7 @@ exports.config = {
 			savePath : 'target/screenshots',
 			screenshotsFolder: 'images',
 			//below eliminates the passed results from the report
-			showPassed: false
+			showPassed: true
 		})
 		);
 

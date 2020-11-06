@@ -15,8 +15,6 @@ describe('Protractor Exercise', function () {
 
 
 
-
-
 	it('shop checkout count test', function () {
 
 		browser.get('https://qaclickacademy.github.io/protocommerce/');
