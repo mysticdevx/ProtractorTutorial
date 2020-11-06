@@ -15,6 +15,8 @@ describe('Protractor Exercise', function() {
 
 	
 	
+	
+	
 	it('shop test', function() {
 
 		browser.get('https://qaclickacademy.github.io/protocommerce/');
@@ -25,8 +27,16 @@ describe('Protractor Exercise', function() {
 
 		element(by.partialLinkText("Checkout")).getText().then(function(txt) {
 			console.log(txt);
+			txt.split(" ")
 		})
 
 	});
+	
+	
+	
+	
+	
+	
+	
 
 });
