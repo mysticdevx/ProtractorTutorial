@@ -27,7 +27,23 @@ describe('Protractor Exercise', function() {
 
 		element(by.partialLinkText("Checkout")).getText().then(function(txt) {
 			console.log(txt);
-			txt.split(" ")
+			// below is with split and charat
+//			var res = txt.split("(");
+//			res = res[1].trim().charAt(0);
+//			console.log("res: "+res)
+			
+			//below is with  replace regex
+			txt=txt.replace(/\D/gi, '');
+			console.log("after replace text: "+txt);
+	
+			expect(txt).toBe("2", " ... TEXT number of items in the shopping cart");
+			
+			//lets convert str to number
+			var int = Number(txt);
+			expect(int).toBe(2, " ... INTEGER number of items in the shopping cart");
+			
+			
+			
 		})
 
 	});
