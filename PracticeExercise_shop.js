@@ -83,6 +83,8 @@ describe('Protractor Exercise', function () {
 
 		console.log("total Actual : " + totalActual);
 
+		expect(totalActual).toBe(totalExpected," ... total amount of the shop to be same as the list");
+
 
 	});
 
