@@ -14,7 +14,7 @@ describe('Protractor Exercise', function () {
 	}
 
 
-
+/*
 	it('shop checkout count test', function () {
 
 		browser.get('https://qaclickacademy.github.io/protocommerce/');
@@ -47,7 +47,7 @@ describe('Protractor Exercise', function () {
 
 	});
 
-
+*/
 	it('shop shopping cart total amount test', async function () {
 		browser.get('https://qaclickacademy.github.io/protocommerce/');
 		element(by.linkText("Shop")).click();
@@ -57,17 +57,17 @@ describe('Protractor Exercise', function () {
 
 		element(by.partialLinkText("Checkout")).click(); //.then(function(){browser.sleep(3000)});
 
-
-		var totalExpected = 0;
-		await element.all(by.css("tr>td[class*='col-sm-1 col-md-1 text-center']:nth-child(4)")).each(function (item) {
-
+		
+		var totalExpected =0;
+		await element.all(by.css("tr>td[class*='col-sm-1 col-md-1 text-center']:nth-child(4)")).
+		each(function (item) {
+			
 			item.getText().then(function (txt) {
 
 				txt = Number(txt.replace(/\D/gi, ''));
 				console.log("after replace text: " + txt);
 				totalExpected += txt;
 			});
-
 		});
 
 		console.log("\ntotal Expected: " + totalExpected);

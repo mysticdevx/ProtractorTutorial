@@ -6,7 +6,7 @@ exports.config = {
 	// server is necessary for the different browsers and consistency
 	// otherwise we dont need it.
 
-	seleniumAddress : 'http://localhost:4444/wd/hub',
+	//seleniumAddress : 'http://localhost:4444/wd/hub',
 	specs : [ 'PracticeExercise_shop.js' ],
 
 	//before method   - executes also report
