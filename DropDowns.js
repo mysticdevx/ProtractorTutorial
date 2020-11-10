@@ -49,7 +49,7 @@ describe('Chain locators demo', function() {
 		element(by.model("first")).sendKeys(5);
 		element(by.model("second")).sendKeys(7);
 		//BELOW LINE SHOULD CHANGE THE OPERATION
-		element(by.model("operator")).element(by.css("option:nth-child(3)")).click;
+		element(by.model("operator")).element(by.css("option:nth-child(3)")).click();
 		element(by.id("gobutton")).click();
 		
 		
